@@ -6,7 +6,7 @@ const UpcomingEventMain = () => {
   return (
     <div>
       <UpcomingEvent />
-      <CurrentAndUpcomingEvent />
+      {/* <CurrentAndUpcomingEvent /> */}
     </div>
   );
 };
