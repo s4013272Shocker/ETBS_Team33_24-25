@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 const JoinUs = () => {
   return (
     <div className="my-10">
-      <div className="w-[95%] mx-auto py-20 flex justify-center gap-5 text-[20px]">
+      <div className="w-[95%] mx-auto py-20 flex flex-col sm:flex-row justify-center gap-5 text-[20px]">
         <div>
           <p className="text-center">
             By joining Tickeven, you will be able to place <br /> your event in
@@ -17,9 +17,9 @@ const JoinUs = () => {
           </p>
         </div>
         <div className="">
-          <img src="/arrow.png" alt="" />
+          <img src="/arrow.png" alt="" className="hidden sm:flex"/>
         </div>
-        <div>
+        <div className="flex justify-center">
           <Button className="text-[20px] text-black font-normal hover:cursor-pointer px-20  bg-[#86F897] py-10  rounded-[5px] hover:bg-[#86F897] border-2 border-[#108F23]">
             Join Us
           </Button>

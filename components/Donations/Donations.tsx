@@ -1,7 +1,11 @@
+"use client"
 import React from "react";
 import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 const Donations = () => {
+    const router = useRouter();
+
   return (
     <div>
       <div className="w-[95%] mx-auto mt-7">
@@ -17,17 +21,18 @@ const Donations = () => {
           page to find out more!
         </p>
 
-        <div className="flex justify-between items-center mt-10 pb-5">
+        <div className="flex flex-col sm:gap-0 gap-10 sm:flex-row justify-between items-center mt-10 pb-5">
             <div>
                 <img src="/donation1.png" alt="" />
             </div>
-            <div className="flex flex-col items-center justify-center gap-[90px]">
+            <div className="flex flex-col items-center justify-center gap-[30px] sm:gap-[90px]">
                 <div className="text-[20px] text-center w-[80%]  mx-auto">
                 We Highly appreciate your donations!
 
                 </div>
                 <div className="w-full flex justify-center">
-                    <Button className="text-[20px] text-black font-normal hover:cursor-pointer w-[70%]  bg-[#86F897] py-10  rounded-[5px] hover:bg-[#86F897] border-2 border-[#108F23]"  >
+                    <Button className="text-[20px] text-black font-normal hover:cursor-pointer w-[70%]  bg-[#86F897] py-10  rounded-[5px] hover:bg-[#86F897] border-2 border-[#108F23]" 
+                    onClick={()=>router.push("/donation-page")} >
                     DONATE
                     </Button>
                 </div>
