@@ -1,9 +1,10 @@
-import UpcomingEvent from '@/components/UpcomingEvent/UpcomingEvent'
+
+import UpcomingEventMain from '@/components/UpcomingEvent/UpcomingEventMain'
 import React from 'react'
 
 const page = () => {
   return (
-    <UpcomingEvent />
+    <UpcomingEventMain />
   )
 }
 
