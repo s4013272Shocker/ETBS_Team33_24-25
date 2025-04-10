@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickeven - Event Management Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+  body {
+   background-color: #fff;
+ 
+  }
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+.homepage-container {
+  text-align: center;
+  padding: 0px;
+  
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(90deg, #00ff88, #00ffcc);
+
+  
+
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  
+}
+
+.nav-links li {
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login, .signup {
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+.login {
+  background: black;
+  color: white;
+}
+
+        /* Main content styles */
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        /* Creators section */
+        .creators-box {
+            background-color: #3CFA97;
+            padding: 40px;
+            margin: 0 auto;
+            max-width: 800px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .creators-box p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Setup steps section */
+        .steps-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .step-box {
+            background-color: #3CFA97;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .step-title {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .step-content {
+            line-height: 1.6;
+        }
+
+        /* Attendees view section */
+        .attendees-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        .attendee-image {
+            flex: 1;
+            text-align: left;
+        }
+
+        .attendee-image img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .attendee-steps {
+            flex: 1;
+            text-align: left;
+        }
+
+        .attendee-steps h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .attendee-steps ol {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        .attendee-steps li {
+            margin-bottom: 15px;
+        }
+
+        /* Refund section */
+        .refund-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .refund-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .refund-info {
+            flex: 1;
+            text-align: left;
+        }
+
+        .refund-info p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .refund-image {
+            flex: 1;
+        }
+
+        .refund-image img {
+            max-width: 100%;
+            border-radius: 10px;
+            border: 2px solid #3CFA97;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #3CFA97;
+            padding: 30px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .footer-nav ul {
+            list-style: none;
+        }
+
+        .footer-nav ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .footer-contact {
+            text-align: center;
+        }
+
+        .footer-contact p {
+            margin-bottom: 5px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+            justify-content: center;
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .footer-address {
+            text-align: right;
+        }
+
+        .divider {
+            width: 1px;
+            height: 100px;
+            background-color: #000;
+            margin: 0 20px;
+        }
+    </style>
+</head>
+<body>
+  <div class="homepage-container">
+    <nav class="navbar">
+      <h1 class="logo">Tickeven</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="events.html">Upcoming Events</a></li>
+        <li><a href="organizers.html">Event Organizers</a></li>
+        <li><a href="donations.html">Donations</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="login.html"><button class="login">Login</button></a>
+        <a href="signup.html"><button class="signup">Sign Up</button></a>
+      </div>
+    </nav>
+
+        <!-- Creators section -->
+        <section class="section">
+            <h1 class="section-title">The Creators & Architects!</h1>
+            <div class="creators-box">
+                <p>You Event Organisers are the real creators and architects who strengthen the bond between people when they attend.</p>
+                <p>Therefore we are pillars to support your desire to organise with maximum efficiency and flow of your attenders.</p>
+            </div>
+        </section>
+
+        <!-- Setup event section -->
+        <section class="section">
+            <h1 class="section-title">How To Setup An Event</h1>
+            <div class="steps-container">
+                <div class="step-box">
+                    <h3 class="step-title">Step 1: Create An Event</h3>
+                    <p class="step-content">On the top right section of your Dashboard, you will see a "Create Event" button, then click on it.</p>
+                </div>
+                <div class="step-box">
+                    <h3 class="step-title">Step 2: Setup Event Details</h3>
+                    <p class="step-content">Here you will fill in a form, relating to all the details for your new event, these will include: Event name, hosts, venue, activities/presentations, opening and closing times.</p>
+                </div>
+                <div class="step-box">
+                    <h3 class="step-title">Step 3: Setup Reminders For Attendees</h3>
+                    <p class="step-content">From how many to how often reminders should be sent, inclusive of when each will be sent... all in your hands.</p>
+                </div>
+                <div class="step-box">
+                    <h3 class="step-title">Step 4: A Custom Made Poll</h3>
+                    <p class="step-content">In case you desire insights for future events and would like to keep readily accessible data from users, feel free to use this optional step.</p>
+                </div>
+                <div class="step-box">
+                    <h3 class="step-title">Step 5: Publish Your Event</h3>
+                    <p class="step-content">Simply click "Publish Event" to release your event to your target users, we'll handle getting the attention of your target attendees.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Attendees view section -->
+        <section class="section">
+            <div class="attendees-section">
+                <div class="attendee-image">
+                    <img src="/pic2.jpg" alt="Profile of an attendee">
+                </div>
+                <div class="attendee-steps">
+                    <h2>What Do Your Attendees See?</h2>
+                    <ol>
+                        <li>Tickeven sends your event via email or notification on their account to all candidates of your chosen target audience, as filled in "Step 2" of setting up your event.</li>
+                        <li>Users see the event and make a reservation for the venue you've appointed through the link we sent to them via email/notification.</li>
+                        <li>Attendees receive a confirmation email containing a receipt of their confirmed reservation & QR to show at the event.</li>
+                        <li>Over time the reminder frequency or set dates to remind the attendees of your event will be automated, hence why it will be at the forefront of their mind as the event gets closer.</li>
+                        <li>Attendees get an automatic reminder the day before (by default). Then have the ability to show their QR code via the digital reservation receipt (in their email).</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Refund control -->
+        <section class="refund-section">
+            <h2 class="section-title">Refund Control</h2>
+            <div class="refund-container">
+                <div class="refund-info">
+                    <p>As you get closer to the event date, you can pre-program how much attendees can receive if they request a refund for their ticket.</p>
+                    <p>For example, the further away the event the higher the percentage of refund attendees can receive; the closer the event the lower the refund.</p>
+                </div>
+                <div class="refund-image">
+                    <img src="/pic3.jpg" alt="Handling money for refunds">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Upcoming Events</a></li>
+                    <li><a href="#">Event Organizers</a></li>
+                    <li><a href="#">Donations</a></li>
+                   
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="footer-contact">
+                <p>Email: info@tickeven.co.uk</p>
+                <p>Phone: 020 430 5294</p>
+                <div class="footer-social">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">X</a>
+                    <a href="#" class="social-icon">ig</a>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="footer-address">
+                <p>49 Stoneton Crescent,</p>
+                <p>Balsall Common</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
