@@ -1,0 +1,209 @@
+
+/* Creators Section Styles */
+.creators-section {
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .creators-content {
+    background-color: #40E0A0;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .creators-text {
+    margin-bottom: 20px;
+  }
+  
+  .creators-text:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Event Setup Guide Styles */
+  .setup-guide {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .guide-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .setup-step {
+    background-color: #40E0A0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .step-title {
+    margin-bottom: 15px;
+  }
+  
+  /* Attendee View Styles */
+  .attendee-view {
+    padding: 30px 20px;
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .attendee-image {
+    flex: 1;
+  }
+  
+  .attendee-image img {
+    max-width: 100%;
+  }
+  
+  .attendee-content {
+    flex: 1;
+    border-left: 2px solid #40E0A0;
+    padding-left: 30px;
+  }
+  
+  .attendee-title {
+    margin-bottom: 20px;
+  }
+  
+  .attendee-list {
+    padding-left: 20px;
+  }
+  
+  .attendee-list-item {
+    margin-bottom: 15px;
+  }
+  
+  .attendee-list-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Refund Control Styles */
+  .refund-control {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .refund-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .refund-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .refund-text {
+    flex: 1;
+  }
+  
+  .refund-description {
+    margin-bottom: 20px;
+  }
+  
+  .refund-description:last-child {
+    margin-bottom: 0;
+  }
+  
+  .refund-image {
+    flex: 1;
+    border: 1px solid #40E0A0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .refund-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Footer Styles */
+  .footer {
+    background-color: #E0FFF0;
+    padding: 30px 20px;
+    margin-top: 40px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+  
+  .footer-logo {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-link-item {
+    margin-bottom: 8px;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-item {
+    margin-bottom: 8px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .social-icon {
+    width: 24px;
+    height: 24px;
+    background-color: black;
+  }
+  
+  .address-line {
+    margin-bottom: 5px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .attendee-view {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+    
+    .attendee-content {
+      border-left: none;
+      padding-left: 0;
+      border-top: 2px solid #40E0A0;
+      padding-top: 20px;
+    }
+    
+    .refund-container {
+      flex-direction: column;
+    }

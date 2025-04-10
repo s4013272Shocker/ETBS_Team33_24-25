@@ -1,0 +1,456 @@
+/* Homepage */
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.homepage-container {
+  text-align: center;
+  padding: 0px;
+  
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: linear-gradient(90deg, #00ff88, #00ffcc);
+
+  
+
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login, .signup {
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+.login {
+  background: black;
+  color: white;
+}
+
+.signup {
+  background: transparent;
+  border: 2px solid black;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+
+.text-content {
+  width: 50%;
+}
+
+.text-content h2 {
+  font-size: 32px;
+}
+
+.text-content ul {
+  text-align: center;
+}
+
+.text-content p {
+  text-align: center;
+  margin: 10px 0;
+}
+
+
+.start-button {
+  background: #86F897;
+  padding: 20px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+.image-container {
+  width: 40%;
+}
+
+.highlighted-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 255, 136, 0.6);
+}
+
+.content-section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+}
+
+.section-title {
+  font-size: 28px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #3CFA97;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav ul li {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-contact {
+  text-align: center;
+}
+
+.footer-contact p {
+  margin-bottom: 5px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.footer-address {
+  text-align: right;
+}
+
+.divider {
+  width: 1px;
+  height: 100px;
+  background-color: #000;
+  margin: 0 20px;
+}
+
+/* Media query */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* join us */
+.join-us {
+  text-align: center;
+  background: black;
+  color: white;
+  padding: 50px 0;
+}
+
+.join-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.left-box {
+  background: #48ff96;
+  padding: 35px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.right-box {
+  background: white;
+  padding: 35px;
+  border-radius: 10px;
+  width: 300px;
+  color: black;
+}
+
+.join-btn {
+  background: #48ff96;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.arrow {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  border: solid white;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+
+
+
+/* we host */
+
+.we-host {
+  text-align: center;
+  padding: 50px;
+}
+
+.search-box {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+}
+
+.search-btn {
+  width: 40px;
+  height: 40px;
+  background: #48ff96;
+  border: none;
+  margin-left: 10px;
+}
+
+.flags {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.flag {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background: red;
+}
+
+.green {
+  background: #48ff96;
+}
+
+
+/* Benefit */
+
+.benefit {
+  text-align: center;
+  padding: 50px;
+}
+
+.benefit-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.green-box {
+  background: #48ff96;
+  padding: 30px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.black-box {
+  background: black;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.arrow {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  border: solid black;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  transform: rotate(45deg);
+}
+
+
+/* Refund security */
+
+.info-benefit-section {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 80px 5%;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.benefit-box {
+  width: 280px;
+  height: 200px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 20px;
+  padding: 20px;
+}
+
+.green {
+  background-color: #40ff95;
+  color: black;
+}
+
+.black {
+  background-color: #000;
+  color: white;
+}
+
+.small-text {
+  font-size: 12px;
+  color: #d84315;
+}
+
+
+/* Attendee benefits*/
+
+.attendee-benefit-section {
+  text-align: center;
+  padding: 60px 5%;
+}
+
+.attendee-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.attendee-cards .card {
+  background-color: #40ff95;
+  width: 180px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px #ccc;
+}
+
+
+
+
+/* Event types */
+
+.event-types-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 60px 5%;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.event-list {
+  max-width: 300px;
+  font-size: 14px;
+}
+
+.event-carousel {
+  text-align: center;
+  background-color: #40ff95;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.carousel-box img {
+  width: 200px;
+  height: auto;
+  margin: 0 10px;
+  border-radius: 6px;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.event-date {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
