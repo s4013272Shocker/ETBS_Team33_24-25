@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+    <header>
+        <link rel="stylesheet" type="text/css" src="{% static '../static/dashboard.css' %}">
+    </header>
+
+    <body>
+        <div class="SideNavBar">
+            <img src="{% static '../static/Profile icon.png' %}"/>
+
+            <ul class="Navigation">
+                <li>
+                    <a href = "/dashboard" >Dashboard</a>
+                </li>
+                <li>
+                    <a href = "/event">Events</a>
+                </li>
+                <li>
+                    <a href = "/revenue">Revenue</a>
+                </li>
+                <li>
+                    <a href = "/history">History of Events</a>
+                </li>
+            </ul>
+
+            <div id="SignOut">Sign Out</div>
+        </div>
+
+        <div class="SectionHead">Dashboard</div>
+
+        <img src="{% static '../static/Bookings Panel.png' %}"/>
+        <img src="{% static '../static/Revenue Panel.png' %}"/>
+        <img src="{% static '../static/History Panel.png' %}"/>
+
+        <button id = "NewEventBtn">Create New Event</button>
+    </body>
+</html>

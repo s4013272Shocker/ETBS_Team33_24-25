@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+    <header>
+        <link rel="stylesheet" type="text/css" src = "{% static '../static/event.css' %}"/>
+    </header>
+    <body>
+        <div class="SideNavBar">
+            <img src="{% static '../static/Profile icon.png' %}"/>
+
+            <ul class="Navigation">
+                <li>
+                    <a href = "/dashboard" >Dashboard</a>
+                </li>
+                <li>
+                    <a href = "/event">Events</a>
+                </li>
+                <li>
+                    <a href = "/revenue">Revenue</a>
+                </li>
+                <li>
+                    <a href = "/history">History of Events</a>
+                </li>
+            </ul>
+
+            <div id="SignOut">Sign Out</div>
+        </div>
+
+        <div class="SectionHead">Events</div>
+    </body>
+</html>
